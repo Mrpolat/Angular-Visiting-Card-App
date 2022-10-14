@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cards',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  constructor() { }
+  cardItem = {
+    title:'Front-end',
+    name:'Muhsin Polat Uçar',
+    phone:'555 444 33 22',
+    email:'info@mpumpumpu.com',
+    address:'Ankara/Etimesgut'   
+  }
+
+  constructor(
+    public dialog : MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
