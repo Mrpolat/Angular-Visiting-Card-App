@@ -11,7 +11,9 @@ describe('CardModalComponent', () => {
       declarations: [ CardModalComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CardModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

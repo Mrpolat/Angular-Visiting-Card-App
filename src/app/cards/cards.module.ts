@@ -9,14 +9,12 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
 import { CardModalComponent } from './card-modal/card-modal.component';
 import {MatInputModule} from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { CardSearchComponent } from './card-search/card-search.component';
 
 @NgModule({
-  declarations: [
-    CardsComponent,
-    CardItemComponent,
-    CardModalComponent
-  ],
+  declarations: [CardsComponent, CardItemComponent, CardModalComponent, CardSearchComponent],
   imports: [
     CommonModule,
     CardsRoutingModule,
@@ -26,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
+    MatProgressBarModule
   ]
 })
 export class CardsModule { }
